@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp">
+      <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
-          <li><a href="INFO">INFO</a></li>
-          <li><a href="HTML">HTML</a></li>
-          <li><a href="CSS">CSS</a></li>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
         </ul>
       </nav>
     </header>
@@ -23,6 +23,18 @@
       <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input id="student-name" type="name" name="name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input id="student-email" type="email" name="email" placeholder="yourname@email.com"/>
+          </div>
+          <div class="info">
+            <label for="birth-date">Date of Birth:</label>
+            <input id="birth-date" type="date" name="date" placeholder="00/00/0000"/>
+          </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML</h2>
