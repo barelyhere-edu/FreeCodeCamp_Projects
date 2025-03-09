@@ -11,226 +11,238 @@
 
 <body>
     
-    <h2>HTML Form Elements and Attributes</h2>
-    
-    <ul>
-        <li><strong><code>form</code> element</strong>: used to create an HTML form for user input.</li>
-        <li><strong><code>action</code> attribute</strong>: used to specify the URL where the form data should be sent.</li>
-        <li><strong><code>method</code> attribute</strong>: used to specify the HTTP method to use when sending the form data. The most common methods are <code>GET</code> and <code>POST</code>.</li>
-    </ul>
-    
-    <p>Example code</p>
-
-    <code>
-
-        &lt;form method="value-goes-here" action="url-goes-here"&gt;
-        <br>&lt;!-- inputs go inside here --&gt;
-        <br>&lt;/form&gt;
-    
-    </code>
-
-    <ul>
-        <li><strong><code>input</code> element</strong>: used to create an input field for user input.</li>
-        <li><strong><code>type</code> attribute</strong>: used to specify the type of input field. Ex. <code>text</code>, <code>email</code>, <code>number</code>, <code>radio</code>, <code>checkbox</code>, etc.</li>
-        <li><strong><code>placeholder</code> attribute</strong>: used to show a hint to the user to show them what to enter in the input field.</li>
-        <li><strong><code>value</code> attribute</strong>: used to specify the value of the input. If the input has a <code>button</code> type, the <code>value</code> attribute can be used to set the button text.</li>
-        <li><strong><code>size</code> attribute</strong>: used to define the number of characters that should be visible as the user types into the input.</li>
-        <li><strong><code>min</code> attribute</strong>: can be used input types such as <code>number</code> to specify the minimum value allowed in the input field.</li>
-        <li><strong><code>max</code> attribute</strong>: can be used input types such as <code>number</code> to specify the maximum value allowed in the input field.</li>
-        <li><strong><code>minlength</code> attribute</strong>: used to specify the minimum number of characters required in an input field.</li>
-        <li><strong><code>maxlength</code> attribute</strong>: used to specify the maximum number of characters allowed in an input field.</li>
-        <li><strong><code>required</code> attribute</strong>: used to specify that an input field must be filled out before submitting the form.</li>
-        <li><strong><code>disabled</code> attribute</strong>: used to specify that an input field should be disabled.</li>
-        <li><strong><code>readonly</code> attribute</strong>: used to specify that an input field is read-only.</li>
-    </ul>
-
-    <p>Example Code</p>
-
-    <code>
+    <header>
         
-        &lt;!-- Text input --&gt;
-        <br>type="text"
-        <br>id="name"
-        <br>name="name"
-        <br>placeholder="e.g. Quincy Larson" 
-        <br>size="20"
-        <br>minlength="5"
-        <br>maxlength="30"
-        <br>required
-        <br>/&gt;
-    
-    <br>
-    <br>
-    
-        &lt;!-- Number input --&gt;
-        <br>&lt;input
-        <br>type="number"
-        <br>id="quantity"
-        <br>name="quantity"
-        <br>min="2"
-        <br>max="10"
-        <br>disabled
-        <br>/&gt;
-    
-    <br>
-    <br>
+        <h1>HTML Tables and Forms Review</h1>
 
-        &lt;!-- Button --&gt;
-        <br>&lt;input
-        <br>type="button" value="Show Alert"
-        <br>/&gt;
+    </header>
 
-    </code>
-    
-    <ul>
-        <li><strong><code>label</code> element</strong>: used to create a label for an input field.</li>
-        <li><strong><code>for</code> attribute</strong>: used to specify which input field the label is for.</li>
-        <li><strong>Implicit form association</strong>: inputs can be associated with labels by wrapping the input field inside the <code>label</code> element.</li>
-    </ul>
-    
-    <p>Example Code</p>
+    <main>
 
-    <code>
+        <h2>HTML Form Elements and Attributes</h2>
+        
+        <ul>
+            <li><strong><code>form</code> element</strong>: used to create an HTML form for user input.</li>
+            <li><strong><code>action</code> attribute</strong>: used to specify the URL where the form data should be sent.</li>
+            <li><strong><code>method</code> attribute</strong>: used to specify the HTTP method to use when sending the form data. The most common methods are <code>GET</code> and <code>POST</code>.</li>
+        </ul>
+        
+        <p>Example code</p>
 
-        &lt;form action=""&gt;
+        <code>
+
+            &lt;form method="value-goes-here" action="url-goes-here"&gt;
+            <br>&lt;!-- inputs go inside here --&gt;
+            <br>&lt;/form&gt;
+        
+        </code>
+
+        <ul>
+            <li><strong><code>input</code> element</strong>: used to create an input field for user input.</li>
+            <li><strong><code>type</code> attribute</strong>: used to specify the type of input field. Ex. <code>text</code>, <code>email</code>, <code>number</code>, <code>radio</code>, <code>checkbox</code>, etc.</li>
+            <li><strong><code>placeholder</code> attribute</strong>: used to show a hint to the user to show them what to enter in the input field.</li>
+            <li><strong><code>value</code> attribute</strong>: used to specify the value of the input. If the input has a <code>button</code> type, the <code>value</code> attribute can be used to set the button text.</li>
+            <li><strong><code>size</code> attribute</strong>: used to define the number of characters that should be visible as the user types into the input.</li>
+            <li><strong><code>min</code> attribute</strong>: can be used input types such as <code>number</code> to specify the minimum value allowed in the input field.</li>
+            <li><strong><code>max</code> attribute</strong>: can be used input types such as <code>number</code> to specify the maximum value allowed in the input field.</li>
+            <li><strong><code>minlength</code> attribute</strong>: used to specify the minimum number of characters required in an input field.</li>
+            <li><strong><code>maxlength</code> attribute</strong>: used to specify the maximum number of characters allowed in an input field.</li>
+            <li><strong><code>required</code> attribute</strong>: used to specify that an input field must be filled out before submitting the form.</li>
+            <li><strong><code>disabled</code> attribute</strong>: used to specify that an input field should be disabled.</li>
+            <li><strong><code>readonly</code> attribute</strong>: used to specify that an input field is read-only.</li>
+        </ul>
+
+        <p>Example Code</p>
+
+        <code>
+            
+            &lt;!-- Text input --&gt;
+            <br>type="text"
+            <br>id="name"
+            <br>name="name"
+            <br>placeholder="e.g. Quincy Larson" 
+            <br>size="20"
+            <br>minlength="5"
+            <br>maxlength="30"
+            <br>required
+            <br>/&gt;
+        
         <br>
-        &lt;label&gt;
-        <br>Full Name:
-        <br>&lt;input type="text" /&gt;
-        <br>&lt;/label&gt;
-        <br>&lt;/form&gt;
-
-    </code>
-
-    <ul>
-        <li><strong>Explicit form association</strong>: inputs can be associated with labels by using the <code>for</code> attribute on the <code>label</code> element.</li>
-    </ul>
-
-    <p>Example Code</p>
-   
-    <code>
-
-    </code>
-   
-        &lt;form action=""&gt;
-        <br>&lt;label for="email"&gt; Email Address: &lt;/label &gt;
-        <br>&lt;input type="email" id="email" /&gt;
-        <br>&lt;/form&gt;
-    
-    </code>
-
-    <ul>
-        <li><strong><code>button</code> element</strong>: used to create a clickable button. A button can also have a <code>type</code> attribute, which is used to control the behavior of the button when it is activated. Ex. <code>submit</code>, <code>reset</code>, <code>button</code>.</li>
-    </ul>
-    
-    <p>Example Code</p>
-    
-    <code>
+        <br>
         
-        &lt;button type="button"&gt;Show Form&lt;/button&gt;
-        <br>&lt;button type="submit"&gt;Submit Form&lt;/button&gt;
-        <br>&lt;button type="reset"&gt;Reset Form&lt;/button&gt;
+            &lt;!-- Number input --&gt;
+            <br>&lt;input
+            <br>type="number"
+            <br>id="quantity"
+            <br>name="quantity"
+            <br>min="2"
+            <br>max="10"
+            <br>disabled
+            <br>/&gt;
+        
+        <br>
+        <br>
 
-    </code>
+            &lt;!-- Button --&gt;
+            <br>&lt;input
+            <br>type="button" value="Show Alert"
+            <br>/&gt;
 
-    <ul>
-        <li><strong><code>fieldset</code> element</strong>: used to group related inputs together.</li>
-        <li><strong><code>legend</code> element</strong>: used to add a caption to describe the group of inputs.</li>
-    </ul>
+        </code>
+        
+        <ul>
+            <li><strong><code>label</code> element</strong>: used to create a label for an input field.</li>
+            <li><strong><code>for</code> attribute</strong>: used to specify which input field the label is for.</li>
+            <li><strong>Implicit form association</strong>: inputs can be associated with labels by wrapping the input field inside the <code>label</code> element.</li>
+        </ul>
+        
+        <p>Example Code</p>
+
+        <code>
+
+            &lt;form action=""&gt;
+            <br>
+            &lt;label&gt;
+            <br>Full Name:
+            <br>&lt;input type="text" /&gt;
+            <br>&lt;/label&gt;
+            <br>&lt;/form&gt;
+
+        </code>
+
+        <ul>
+            <li><strong>Explicit form association</strong>: inputs can be associated with labels by using the <code>for</code> attribute on the <code>label</code> element.</li>
+        </ul>
+
+        <p>Example Code</p>
     
+        <code>
+
+        </code>
+    
+            &lt;form action=""&gt;
+            <br>&lt;label for="email"&gt; Email Address: &lt;/label &gt;
+            <br>&lt;input type="email" id="email" /&gt;
+            <br>&lt;/form&gt;
+        
+        </code>
+
+        <ul>
+            <li><strong><code>button</code> element</strong>: used to create a clickable button. A button can also have a <code>type</code> attribute, which is used to control the behavior of the button when it is activated. Ex. <code>submit</code>, <code>reset</code>, <code>button</code>.</li>
+        </ul>
+        
         <p>Example Code</p>
         
         <code>
             
+            &lt;button type="button"&gt;Show Form&lt;/button&gt;
+            <br>&lt;button type="submit"&gt;Submit Form&lt;/button&gt;
+            <br>&lt;button type="reset"&gt;Reset Form&lt;/button&gt;
+
+        </code>
+
+        <ul>
+            <li><strong><code>fieldset</code> element</strong>: used to group related inputs together.</li>
+            <li><strong><code>legend</code> element</strong>: used to add a caption to describe the group of inputs.</li>
+        </ul>
+        
+            <p>Example Code</p>
+            
+            <code>
+                
+                &lt;!-- Radio group --&gt;
+                <br>&lt;fieldset&gt;
+                <br>&lt;legend&gt;Was this your first time at our hotel?&lt;/legend&gt;
+                
+                <br>
+                <br>
+
+                <br>&lt;label for="yes-option"&gt;Yes&lt;/label&gt;
+                <br>&lt;input id="yes-option" type="radio" name="hotel-stay"/&gt;
+            
+                &lt;label for="no-option"&gt;No&lt;/label&gt;
+                <br>
+                <br>
+                
+                &lt;/fieldset&gt;
+
+                <br>
+                <br>
+
+            </code>
+
+        <ul>
+            <li><strong>Focused state</strong>: this is the state of an input field when it is selected by the user.</li>
+        </ul>
+        
+        <h2>Working with HTML Table Elements and Attributes</h2>
+        
+        <ul>
+            <li><strong>Table element</strong>: used to create an HTML table.</li>
+            <li><strong>Table Head (<code>thead</code>) element</strong>: used to group the header content in an HTML table.</li>
+            <li><strong>Table Row (<code>tr</code>) element</strong>: used to create a row in an HTML table.</li>
+            <li><strong>Table Header (<code>th</code>) element</strong>: used to create a header cell in an HTML table.</li>
+            <li><strong>Table body (<code>tbody</code>) element</strong>: used to group the body content in an HTML table.</li>
+            <li><strong>Table Data Cell (<code>td</code>) element</strong>: used to create a data cell in an HTML table.</li>
+            <li><strong>Table Foot (<code>tfoot</code>) element</strong>: used to group the footer content in an HTML table.</li>
+            <li><strong><code>caption</code> element</strong>: used to add a title of an HTML table.</li>
+            <li><strong><code>colspan</code> attribute</strong>: used to specify the number of columns a table cell should span.</li>
+        </ul>
+        
+        <p>Example Code</p>
+
+        <code>
+
             &lt;!-- Radio group --&gt;
             <br>&lt;fieldset&gt;
-            <br>&lt;legend&gt;Was this your first time at our hotel?&lt;/legend&gt;
-            <br>&lt;label for="yes-option"&gt;Yes&lt;/label&gt;
-            <br>&lt;input id="yes-option" type="radio" name="hotel-stay"/&gt;
+            <br>&lt;legend&gt;Was this your first time at our hotel? &lt;/legend&gt;
+
+        <br>
+        <br>
+
+            &lt;label for="yes-option"&gt;Yes &lt;/label&gt;
+            <br>&lt;input id="yes-option" type="radio" name="hotel-stay" /&gt;
+
+        <br>
+        <br>
+
+            &lt;label for="no-option">No &lt;/label&gt;
+            <br>&lt;input id="no-option" type="radio" name="hotel-stay" /&gt;
+            <br>&lt;/fieldset&gt;
+
+            <br>
+            <br>
         
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-option<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-option<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hotel-stay<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">&gt;</span></span>
+            &lt;!-- Checkbox group --&gt;
+            <br>&lt;fieldset&gt;
+            <br>&lt;legend&gt;
+                Why did you choose to stay at our hotel? (Check all that apply)
+            <br>&lt;/legend&gt;
+
+            <br>
+            <br>
         
-        <span class="token comment">&lt;!-- Checkbox group --&gt;</span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span><span class="token punctuation">&gt;</span></span>
-            Why did you choose to stay at our hotel? (Check all that apply)
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">&gt;</span></span>
+            &lt;label for="location">Location&lt;/label&gt;
+            <br>&lt;input type="checkbox" id="location" name="location" value="location" /&gt;
+
+            <br>
+            <br>
         
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Location<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+            &lt;label for="price">Price&lt;/label&gt;
+            <br>&lt;input type="checkbox" id="price" name="price" value="price" /&gt;
+            <br>&lt;/fieldset&gt;
+
+        </code>
         
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>price<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Price<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>price<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>price<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>price<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">&gt;</span></span>
-        </code></pre></details>
-    
-    <ul>
-        <li><strong>Focused state</strong>: this is the state of an input field when it is selected by the user.</li>
-    </ul>
-    
-    <h2>Working with HTML Table Elements and Attributes</h2>
-    
-    <ul>
-        <li><strong>Table element</strong>: used to create an HTML table.</li>
-        <li><strong>Table Head (<code>thead</code>) element</strong>: used to group the header content in an HTML table.</li>
-        <li><strong>Table Row (<code>tr</code>) element</strong>: used to create a row in an HTML table.</li>
-        <li><strong>Table Header (<code>th</code>) element</strong>: used to create a header cell in an HTML table.</li>
-        <li><strong>Table body (<code>tbody</code>) element</strong>: used to group the body content in an HTML table.</li>
-        <li><strong>Table Data Cell (<code>td</code>) element</strong>: used to create a data cell in an HTML table.</li>
-        <li><strong>Table Foot (<code>tfoot</code>) element</strong>: used to group the footer content in an HTML table.</li>
-        <li><strong><code>caption</code> element</strong>: used to add a title of an HTML table.</li>
-        <li><strong><code>colspan</code> attribute</strong>: used to specify the number of columns a table cell should span.</li>
-    </ul>
-    
-    <details class="code-details" open=""><summary class="code-details-summary">Example Code</summary><pre class="language-html" tabindex="0" role="region" aria-label="HTML code example"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">&gt;</span></span>Exam Grades<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">&gt;</span></span>
-    
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Last Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>First Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Grade<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
-    
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Davis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Alex<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>54<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-    
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Doe<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Samantha<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>92<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-    
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Rodriguez<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Marcus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>88<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
-    
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tfoot</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Average Grade<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>78<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tfoot</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
-    </code></pre></details>
-    
-    <h2>Working with HTML Tools</h2>
-    
-    <ul>
-        <li><strong>HTML validator</strong>: a tool that checks the syntax of HTML code to ensure it is valid.</li>
-        <li><strong>DOM inspector</strong>: a tool that allows you to inspect and modify the HTML structure of a web page.</li>
-        <li><strong>Devtools</strong>: a set of web developer tools built directly into the browser that helps you debug, profile, and analyze web pages.</li>
-    </ul>
+        <h2>Working with HTML Tools</h2>
+        
+        <ul>
+            <li><strong>HTML validator</strong>: a tool that checks the syntax of HTML code to ensure it is valid.</li>
+            <li><strong>DOM inspector</strong>: a tool that allows you to inspect and modify the HTML structure of a web page.</li>
+            <li><strong>Devtools</strong>: a set of web developer tools built directly into the browser that helps you debug, profile, and analyze web pages.</li>
+        </ul>
+
+    </main>
 
 </body>
 
